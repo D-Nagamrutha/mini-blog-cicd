@@ -32,6 +32,7 @@ main {
   padding: 0 16px;
 }
 
+.editor,
 .post {
   background: #fff;
   border: 1px solid #ddd;
@@ -40,12 +41,87 @@ main {
   margin-bottom: 16px;
 }
 
+.editor h2,
 .post h2 {
   margin: 0;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  margin-right: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1f3a5f;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e3e6ea;
+  color: #222;
+}
+
+button.danger {
+  background: #b3261e;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  color: #b3261e;
+  font-size: 0.9rem;
 }
 
 .date {
   margin: 0 0 8px;
   font-size: 0.85rem;
+  color: #666;
+}
+
+.content h3,
+.content h4,
+.content h5 {
+  margin: 12px 0 4px;
+}
+
+.content p {
+  margin: 0 0 8px;
+}
+
+.content code {
+  background: #eef0f3;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.empty {
+  text-align: center;
   color: #666;
 }
